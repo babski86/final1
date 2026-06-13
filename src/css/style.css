@@ -1,42 +1,49 @@
 @import "tailwindcss";
+
 html {
   scroll-behavior: smooth;
 }
-@layer base {
-  .container {
-    width: 92%; /* მობილურისთვის: ეკრანის 92% (375 * 0.92 = ~345px) */
-    max-width: 347px; /* სიმკაცრე: არასდროს გადააჭარბოს 347px-ს */
-    margin: 0 auto; /* ცენტრში დასმა */
-  }
+@import "tailwindcss";
 
-  /* დიდი ეკრანებისთვის (მაგ: ლეპტოპი/დიდი მონიტორი) */
-  @media (min-width: 1024px) {
-    .container {
-      max-width: 1200px;
-      width: 90%;
-    }
+.social-icon {
+  @apply w-[32px] mr-4 cursor-pointer hover:opacity-80 transition-opacity;
+}
+.button-text-white {
+  @apply text-[21px] font-[400] tracking-[3%] lg:flex justify-center items-center  text-white bg-[#FD6F00] hover:bg-[#e56300] cursor-pointer  py-4   transition-colors;
+}
+.filter-button {
+  @apply text-[21px] font-[400] tracking-[3%] text-black bg-[#EDEDED] hover:bg-[#dcdcdc] py-3 px-5 rounded-xl cursor-pointer transition-colors;
+}
+.section-header {
+  @apply flex flex-col items-center justify-start text-center max-w-[347px] lg:max-w-[940px] lg:h-[214px] mx-auto;
+}
+.section-title {
+  @apply text-4xl lg:text-[65px] tracking-[3%] font-[600];
+}
+.section-desc {
+  @apply mt-10 lg:mt-[22px] text-[21px] max-w-[800px];
+}
+.form-input {
+  @apply w-full  h-[76px] bg-[#F8F8F8] rounded-[14px] p-5 text-black text-[21px];
+}
+.container {
+  width: 92%;
+  max-width: 347px;
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
   }
 }
-@layer components {
-  .social-icon {
-    @apply w-[32px] mr-4 cursor-pointer hover:opacity-80 transition-opacity;
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
   }
-  .button-text-white {
-    @apply text-[21px] font-[400] tracking-[3%] flex justify-center text-white bg-[#FD6F00] hover:bg-[#e56300] cursor-pointer w-[188px] py-4 text-center rounded-[5px] transition-colors;
-  }
-  .filter-button {
-    @apply text-[21px] font-[400] tracking-[3%] text-black bg-[#EDEDED] hover:bg-[#dcdcdc] py-3 px-5 rounded-xl cursor-pointer transition-colors;
-  }
-
-  .section-header {
-    @apply flex flex-col items-center justify-start text-center max-w-[347px] lg:max-w-[940px] lg:h-[214px] mx-auto;
-  }
-
-  .section-title {
-    @apply text-4xl lg:text-[65px] tracking-[3%] font-[600];
-  }
-
-  .section-desc {
-    @apply mt-10 lg:mt-[22px] text-[21px] max-w-[800px];
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1420px;
+    width: 90%;
   }
 }

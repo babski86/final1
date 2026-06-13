@@ -23,7 +23,7 @@
   </head>
   <body class="bg-[#1E1E1E] min-h-screen text-white">
     <header class="container lg:mb-30">
-      <nav class="flex justify-between items-center w-[98%] mt-[61px]">
+      <nav class="flex justify-between items-center mt-[61px]">
         <a href="index.html" class="ml-[2%]"
           ><img src="src/fotoebi/logo2.svg" alt="luka gogisvili Logo" class="w-19 bg-[#5f2486] rounded-lg"
         /></a>
@@ -35,7 +35,7 @@
           <li><a href="#testimonials">testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="hidden lg:flex p-4 button-text-white">Download CV</button>
+        <a href="#" download="" class="hidden p-4 rounded-[5px] button-text-white">Download CV</a>
         <div class="lg:hidden">
           <img
             src="src/fotoebi/Frame 3.svg"
@@ -57,10 +57,8 @@
             Voluptas, voluptate. Doloribus, voluptate. lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptas, voluptates. Doloribus, voluptate. Voluptas, voluptate. Doloribus, voluptate.
           </p>
-          <a href="#contact" >
-            <button class="hidden lg:block  mt-[22px]  rounded button-text-white">
-              Hire Me
-            </button>
+          <a href="">
+            <button class="hidden mt-[22px] rounded-[5px] px-[52px] button-text-white">Hire Me</button>
           </a>
         </div>
         <div class="lg:flex lg:flex-col-reverse">
@@ -74,11 +72,9 @@
             <a href="https://www.linkedin.com/in/luka-gogishvili-6242b9405/"
               ><img src="src/fotoebi/licon.png" alt="linkedin" class="social-icon"
             /></a>
-            <a href="https://github.com/babski86"
-              ><img src="src/fotoebi/gh.svg" alt=" github" class="social-icon"
-            /></a>
+            <a href="https://github.com/babski86"><img src="src/fotoebi/gh.svg" alt=" github" class="social-icon" /></a>
             <a href="https://x.com/babski86"
-              ><img src="src/fotoebi/xicon.png" alt="twitter" class="social-icon" />
+              ><img src="src/fotoebi/xicon.png" alt="twitter" class="social-icon pt-1" />
             </a>
           </div>
           <div class="relative mt-20 flex justify-center">
@@ -145,7 +141,9 @@
             convallis pretium
           </p>
         </div>
-        <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center gap-[31px] mt-[41px] lg:mt-6 mx-auto mb-[80px] lg:mb-[139px]">
+        <div
+          class="flex flex-col lg:flex-row lg:flex-wrap justify-center gap-[31px] mt-[41px] lg:mt-6 mx-auto mb-[80px] lg:mb-[139px]"
+        >
           <div class="w-[330px] h-[346px] rounded-[14px] bg-white flex flex-col justify-center gap-6 pl-[18px]">
             <img src="src/fotoebi/shesacvleli.png " alt="icon" class="w-[70px] h-[70px]" />
             <h3 class="text-[32px] font-[600] tracking-[3%] text-black">HTML</h3>
@@ -196,26 +194,66 @@
           </p>
         </div>
       </section>
-      <section id="contact" class="container mt-20 pb-21 lg:pb-11 lg:mt-[140px] mb-[80px] lg:mb-[140px]">
+      <section id="contact" class="container mt-20 pb-21 lg:pb-11 lg:mt-[140px]">
         <div class="section-header">
-          <h2 class="section-title" >Contact Me</h2>
+          <h2 class="section-title">Contact Me</h2>
           <p class="section-desc">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
             convallis pretium. Turpis tempus pharetra
           </p>
         </div>
         <form class="flex flex-col items-center">
-         <div class="flex flex-col gap-[28px] lg:flex-row mt-5 mb-[28px] lg:mb-[41px] ">
-          <input type="text" placeholder="Your Name" class="w-[347px] lg:w-[312px] h-[76px] bg-[#F8F8F8] rounded-[14px] p-5 text-black" />
-          <input type="email" placeholder="Your Email" class="w-[347px] lg:w-[312px] h-[76px] bg-[#F8F8F8] rounded-[14px] p-5 text-black " />
-          <input type="text" placeholder="Enter Your Website" class="w-[347px] lg:w-[312px] h-[76px] bg-[#F8F8F8] rounded-[14px] p-5 text-black " />
-          </div> 
+          <div
+            class="flex flex-col gap-[28px] lg:flex-row mt-5 mb-[28px] lg:mb-[41px] w-full max-w-[347px] lg:max-w-[992px] lg:flex-1"
+          >
+            <input type="text" placeholder="Your Name" class="form-input" />
+            <input type="email" placeholder="Your Email" class="form-input" />
+            <input type="text" placeholder="Enter Your Website" class="form-input" />
+          </div>
           <textarea
-            class="w-full max-w-[992px] h-[116px] bg-[#F8F8F8] rounded-[14px] p-5 text-black "
+            class="w-full max-w-[347px] lg:max-w-[992px] h-[116px] text-[21px] bg-[#F8F8F8] rounded-[14px] p-5 text-black"
             placeholder="Enter Your Message"
           ></textarea>
-          <button class="button-text-white rounded-[14px] w-[347px] lg:w-[312px] h-[76px]  mt-[37px] lg:mt-8 text-[24px] font-[600] tracking-[3%]  ">Contact Me</button>
-         </form>
+          <button
+            class="button-text-white max-w-[347px] rounded-[14px] w-full lg:w-[312px] h-[76px] mt-[37px] lg:mt-8 text-[24px] font-[600] tracking-[3%]"
+          >
+            Contact Me
+          </button>
+        </form>
+      </section>
     </main>
+    <footer class="mt-21 lg:mt-[305px]">
+      <div
+        class="container flex flex-col lg:flex-col-reverse justify-center items-center gap-15 lg:gap-[90px] pb-[55px] lg:pb-[62px] m-auto"
+      >
+        <div class="flex mt-[19px] gap-[25px] lg:justify-center">
+          <a href="https://www.facebook.com/luka.gogishvili.31"
+            ><img src="src/fotoebi/fbicon.png" alt="facebook" class="social-icon"
+          /></a>
+          <a href="https://www.instagram.com/agresbabs/"
+            ><img src="src/fotoebi/ig.png" alt="instagram" class="social-icon"
+          /></a>
+          <a href="https://www.linkedin.com/in/luka-gogishvili-6242b9405/"
+            ><img src="src/fotoebi/licon.png" alt="linkedin" class="social-icon"
+          /></a>
+          <a href="https://github.com/babski86"><img src="src/fotoebi/gh.svg" alt=" github" class="social-icon" /></a>
+          <a href="https://x.com/babski86"
+            ><img src="src/fotoebi/xicon.png" alt="twitter" class="social-icon pt-1" />
+          </a>
+        </div>
+        <ul class="flex flex-col lg:flex lg:flex-row gap-8 lg:gap-10 items-center text-[21px] tracking-[3%] text-white">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#testimonials">testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="h-30 lg:h-21 flex items-center justify-center bg-[#121212]">
+        <p class="text-center text-white text-[16px]">&copy; 2026 babski. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
