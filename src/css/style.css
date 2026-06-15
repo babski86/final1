@@ -1,9 +1,9 @@
 @import "tailwindcss";
-
+@source "../../*.html";
+@source "../js/**/*.js";
 html {
   scroll-behavior: smooth;
 }
-@import "tailwindcss";
 
 .social-icon {
   @apply w-[32px] mr-4 cursor-pointer hover:opacity-80 transition-opacity;
@@ -13,6 +13,9 @@ html {
 }
 .filter-button {
   @apply text-[21px] font-[400] tracking-[3%] text-black bg-[#EDEDED] hover:bg-[#dcdcdc] py-3 px-5 rounded-xl cursor-pointer transition-colors;
+}
+.menu-item {
+  @apply border-y-2 border-solid border-amber-300 px-4 py-2;
 }
 .section-header {
   @apply flex flex-col items-center justify-start text-center max-w-[347px] lg:max-w-[940px] lg:h-[214px] mx-auto;
@@ -26,6 +29,7 @@ html {
 .form-input {
   @apply w-full  h-[76px] bg-[#F8F8F8] rounded-[14px] p-5 text-black text-[21px];
 }
+
 .container {
   width: 92%;
   max-width: 347px;
