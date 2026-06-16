@@ -4,9 +4,7 @@
 html {
   scroll-behavior: smooth;
 }
-@theme {
-  --duration-3000: 3000ms;
-}
+
 .social-icon {
   @apply w-[32px] mr-4 cursor-pointer hover:opacity-80 transition-opacity;
 }
