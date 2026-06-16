@@ -37,10 +37,8 @@ menuToggle.addEventListener("click", (event) => {
   }
 });
 
-// overlay-ზე დაკლიკებით დახურვა
 overlay.addEventListener("click", closeMenu);
 
-// ლინკზე დაკლიკებით დახურვა
 menuLinks.forEach((link) => {
   link.addEventListener("click", closeMenu);
 });
@@ -60,8 +58,6 @@ const observer = new IntersectionObserver(
         const currentGorgola = gorgola[i];
 
         if (currentGorgola) {
-          // 1. აღარ გვჭირდება className-ის წაშლა და კლასების დამატება
-          // 2. პირდაპირ ვუცვლით marginLeft-ს:
           currentGorgola.style.marginLeft = `${left}px`;
         }
       });
@@ -70,8 +66,63 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.3 },
 );
-// gorgola.forEach((e) => {
-//   e.classList.add("ml-[200px]");
-// });
+
 console.log(gorgola);
 observer.observe(section);
+
+const buttons = document.querySelectorAll(".filter-button");
+const projects = document.querySelectorAll(".project");
+
+buttons.forEach((e) => {
+  e.addEventListener("click", () => {
+    buttons.forEach((e) => {
+      e.style.backgroundColor = "";
+
+      e.classList.remove("bg-[#FF8233]");
+    });
+
+    e.style.backgroundColor = "#FF8233";
+
+    const filter = e.getAttribute("data-filter");
+
+    // 3. შენი ფილტრაციის ლოგიკა
+    projects.forEach((project) => {
+      const category = project.getAttribute("data-category");
+      if (filter === "all" || category === filter || (filter === "html/css" && category === "html/css/js")) {
+        project.style.display = "block";
+      } else {
+        project.style.display = "none";
+      }
+    });
+  });
+});
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(contactForm);
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    website: formData.get("website"),
+    message: formData.get("message"),
+  };
+
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      alert("Thank you for getting in touch! We appreciate you contacting us.");
+      contactForm.reset();
+    }
+  } catch (error) {
+    console.error("შეცდომა:", error);
+  }
+});

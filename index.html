@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <link href="src/css/output.css" rel="stylesheet" />
-    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/main.js" defer></script>
     <!-- Open Graph   -->
     <meta property="og:title" content="ყველაზე ძლიერი პროგრამისტი" />
     <meta property="og:type" content="website" />
@@ -96,7 +96,7 @@
             Voluptas, voluptate. Doloribus, voluptate. lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptas, voluptates. Doloribus, voluptate. Voluptas, voluptate. Doloribus, voluptate.
           </p>
-          <a href="">
+          <a href="#contact">
             <button class="hidden mt-[22px] rounded-[5px] px-[52px] button-text-white">Hire Me</button>
           </a>
         </div>
@@ -278,18 +278,21 @@
           <p class="section-desc">აქაა ჩემი პროექტების სია საიდან დავიწყე და ჯერ კიდევ განვითარების პროცესში ვარ</p>
         </div>
         <div class="flex flex-wrap gap-4">
-          <div class="flex flex-row flex-wrap justify-center gap-5 w-full mt-7 lg:mt-[60px] mb-[47px] lg:mb-[106px]">
-            <button class="filter-button">ყველა</button>
-            <button class="filter-button">html/css</button>
-            <button class="filter-button">html/css/js</button>
-            <button class="filter-button">მალე React-იც დაემატება</button>
+          <div
+            id="project-filter"
+            class="flex flex-row flex-wrap justify-center gap-5 w-full mt-7 lg:mt-[60px] mb-[47px] lg:mb-[106px]"
+          >
+            <button class="filter-button" data-filter="all">ყველა</button>
+            <button class="filter-button" data-filter="html/css">html/css</button>
+            <button class="filter-button" data-filter="html/css/js">html/css/js</button>
+            <button class="filter-button" data-filter="react">მალე React-იც დაემატება</button>
           </div>
         </div>
 
         <div
           class="flex flex-col lg:flex-row lg:justify-center gap-10 lg:gap-11 mt-12 lg:mt-[106px] mb-20 lg:mb-[139px]"
         >
-          <div>
+          <div class="project" data-category="html/css">
             <div class="w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
               <a href="https://babski86.github.io/shualeduri/" target="_blank"
                 ><img src="src/fotoebi/project1.png" alt="project" class="h-full w-full rounded-2xl"
@@ -298,7 +301,7 @@
             <h2 class="text-[#FD6F00] text-[19px] tracking-[3%] mt-[29px] lg:mt-[37px]">Web Design</h2>
             <p class="text[24px] tracking-[3%] font-[700] mt-3 lg:mt-[10px]">გამოყენებულია მხოლოდ Html & css</p>
           </div>
-          <div>
+          <div class="project" data-category="html/css/js">
             <div class="w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
               <a href="https://babski86.github.io/final1/" target="_blank"
                 ><img src="src/fotoebi/project2.png" alt="project" class="h-full w-full rounded-2xl"
@@ -307,7 +310,7 @@
             <h2 class="text-[#FD6F00] text-[19px] tracking-[3%] mt-[29px] lg:mt-[37px]">Web Design</h2>
             <p class="text[24px] tracking-[3%] font-[700] mt-3 lg:mt-[10px]">ამჯერად js დავამატე ჩემ ცოდნას</p>
           </div>
-          <div>
+          <div class="project" data-category="react">
             <div class="w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
               <a href="https://react.dev/" target="_blank">
                 <img src="src/fotoebi/project3.png" alt="project" class="h-full w-full rounded-2xl"
@@ -327,7 +330,6 @@
           </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-[235px,1fr] gap-6 p-8 bg-white rounded-[14px]">
-          <!-- 1. ფოტო: lg:row-span-2 აიძულებს კომპიუტერზე ორივე სართული დაიკავოს -->
           <div class="flex justify-center lg:block lg:row-span-2">
             <div class="w-[125px] h-[125px] lg:w-[235px] lg:h-[235px]">
               <img
@@ -338,13 +340,11 @@
             </div>
           </div>
 
-          <!-- 2. სახელი და პოზიცია -->
           <div class="text-center lg:text-left">
             <p class="text-2xl font-bold text-black">Name</p>
             <p class="text-[19px] text-gray-600">Ceo</p>
           </div>
 
-          <!-- 3. ტექსტი -->
           <div class="text-center lg:text-left">
             <p class="text-[#424242] text-[21px]">
               Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan...
@@ -362,7 +362,6 @@
           </div>
         </div> -->
       </section>
-
       <section id="contact" class="container mt-20 pb-21 lg:pb-11 lg:mt-[140px]">
         <div class="section-header">
           <h2 class="section-title">Contact Me</h2>
@@ -371,15 +370,16 @@
             convallis pretium. Turpis tempus pharetra
           </p>
         </div>
-        <form class="flex flex-col items-center">
+        <form id="contact-form" class="flex flex-col items-center">
           <div
             class="flex flex-col gap-[28px] lg:flex-row mt-5 mb-[28px] lg:mb-[41px] w-full max-w-[347px] lg:max-w-[992px] lg:flex-1"
           >
-            <input type="text" placeholder="Your Name" class="form-input" />
-            <input type="email" placeholder="Your Email" class="form-input" />
-            <input type="text" placeholder="Enter Your Website" class="form-input" />
+            <input type="text" name="name" placeholder="Your Name" class="form-input" />
+            <input type="email" name="email" placeholder="Your Email" class="form-input" />
+            <input type="text" name="website" placeholder="Enter Your Website" class="form-input" />
           </div>
           <textarea
+            name="message"
             class="w-full max-w-[347px] lg:max-w-[992px] h-[116px] text-[21px] bg-[#F8F8F8] rounded-[14px] p-5 text-black"
             placeholder="Enter Your Message"
           ></textarea>
