@@ -27,7 +27,7 @@
         <a href="index.html" class="ml-[2%]"
           ><img src="src/fotoebi/logo2.svg" alt="luka gogisvili Logo" class="w-19 bg-[#5f2486] rounded-lg"
         /></a>
-        <ul class="hidden lg:flex items-center text-[21px] tracking-[3%] lg:flex gap-8 text-white">
+        <ul class="hidden lg:flex items-center text-[21px] tracking-[3%] gap-8 text-white">
           <li><a href="index.html">Home</a></li>
           <li><a href="#aboutme">About Me</a></li>
           <li><a href="#services">Services</a></li>
@@ -51,7 +51,40 @@
         </div>
       </nav>
     </header>
-    <div class=""></div>
+    <div id="overlay" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-40"></div>
+    <div id="mobile-menu" class="hidden fixed top-0 right-0 z-50 bg-[#363434] max-w-[347px] w-[70%] h-screen">
+      <div class="bg-[#1E1E1E]">
+        <ul class="flex flex-col align-start text-[21px] tracking-[3%] text-white mt-11">
+          <li><a href="index.html" class="border-for-menu">Home</a></li>
+          <li><a href="#aboutme" class="border-for-menu">About Me</a></li>
+          <li><a href="#services" class="border-for-menu">Services</a></li>
+          <li><a href="#projects" class="border-for-menu">projects</a></li>
+          <li><a href="#testimonials" class="border-for-menu">testimonials</a></li>
+          <li><a href="#contact" class="flex border-y-[0.2px] border-white w-full py-2 pl-2">Contact</a></li>
+        </ul>
+      </div>
+      <div class="bg-[#363434]">
+        <div class="flex justify-center pt-[30px]">
+          <a href="https://www.facebook.com/luka.gogishvili.31"
+            ><img src="src/fotoebi/fbicon.png" alt="facebook" class="social-icon"
+          /></a>
+          <a href="https://www.instagram.com/agresbabs/"
+            ><img src="src/fotoebi/ig.png" alt="instagram" class="social-icon"
+          /></a>
+          <a href="https://www.linkedin.com/in/luka-gogishvili-6242b9405/"
+            ><img src="src/fotoebi/licon.png" alt="linkedin" class="social-icon"
+          /></a>
+          <a href="https://github.com/babski86"><img src="src/fotoebi/gh.svg" alt=" github" class="social-icon" /></a>
+          <a href="https://x.com/babski86"
+            ><img src="src/fotoebi/xicon.png" alt="twitter" class="social-icon pt-1" />
+          </a>
+        </div>
+        <div class="mt-[30px] flex flex-col items-center">
+          <a href="579120275" class="text-xl font-bold">+995579120275</a>
+          <a href="xuucca9330@gmail.com " class="text-xl font-bold mb-11">xuucca9330@gmail.com</a>
+        </div>
+      </div>
+    </div>
     <main class="container">
       <section class="lg:mt-[120px] mt-[46px] lg:mb-[70px] lg:flex lg:flex-row lg:justify-between lg:items-center">
         <div class="max-w-[714px]">
@@ -126,51 +159,80 @@
               Voluptas, voluptates. Doloribus, voluptate. Voluptas, voluptate. Doloribus, voluptate.
             </p>
           </div>
-          <div class="mt-[26px] lg:mt-4">
-            <div class="space-y-6 w-full max-w-xl">
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-white font-medium">HTML</span>
-                </div>
-                <div class="w-full bg-white rounded-full h-2">
-                  <div
-                    data-progress="99"
-                    class="bg-orange-500 h-2 rounded-full w-0 transition-all duration-1000 ease-out"
-                  ></div>
+          <div
+            id="scroll-div"
+            class="mt-[26px] lg:mt-4 lg:space-y-4 space-y-[28px] w-full max-w-xl text-2xl font-[600]"
+          >
+            <div>
+              <div class="flex justify-between mb-[18px]">
+                <span class="text-white">Html</span>
+              </div>
+              <div class="w-full bg-white rounded-full h-3 flex items-center">
+                <div
+                  id="burtula"
+                  data-progress="99"
+                  class="bg-orange-500 h-3 rounded-full transition-all duration-3000 ease-out"
+                  style="width: 0%"
+                >
+                  <div class="ml-[-6px] transition-[margin-left] duration-3000 ease-out" data-gorgola>
+                    <div
+                      class="h-5 w-5 lg:h-8 lg:w-8 rounded-full bg-white border-4 border-orange-500 mt-[-4px] lg:mt-[-10px]"
+                    ></div>
+                  </div>
                 </div>
               </div>
-
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-white font-medium">CSS</span>
-                </div>
-                <div class="w-full bg-white rounded-full h-2">
-                  <div
-                    data-progress="99"
-                    class="bg-orange-500 h-2 rounded-full w-0 transition-all duration-1000 ease-out"
-                  ></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-[18px]">
+                <span class="text-white">Css</span>
+              </div>
+              <div class="w-full bg-white rounded-full h-3 flex items-center">
+                <div
+                  data-progress="99"
+                  class="bg-orange-500 h-3 rounded-full transition-all duration-3000 ease-out"
+                  style="width: 0%"
+                >
+                  <div class="ml-[-6px] transition-[margin-left] duration-3000 ease-out" data-gorgola>
+                    <div
+                      class="h-5 w-5 lg:h-8 lg:w-8 rounded-full bg-white border-4 border-orange-500 mt-[-4px] lg:mt-[-10px]"
+                    ></div>
+                  </div>
                 </div>
               </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-white font-medium">js</span>
-                </div>
-                <div class="w-full bg-white rounded-full h-2">
-                  <div
-                    data-progress="97"
-                    class="bg-orange-500 h-2 rounded-full w-0 transition-all duration-1000 ease-out"
-                  ></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-[18px]">
+                <span class="text-white">Js</span>
+              </div>
+              <div class="w-full bg-white rounded-full h-3 flex items-center">
+                <div
+                  data-progress="97"
+                  class="bg-orange-500 h-3 rounded-full transition-all duration-3000 ease-out"
+                  style="width: 0%"
+                >
+                  <div class="ml-[-6px] transition-[margin-left] duration-3000 ease-out" data-gorgola>
+                    <div
+                      class="h-5 w-5 lg:h-8 lg:w-8 rounded-full bg-white border-4 border-orange-500 mt-[-4px] lg:mt-[-10px]"
+                    ></div>
+                  </div>
                 </div>
               </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-white font-medium">React</span>
-                </div>
-                <div class="w-full bg-white rounded-full h-2">
-                  <div
-                    data-progress="1"
-                    class="bg-orange-500 h-2 rounded-full w-0 transition-all duration-1000 ease-out"
-                  ></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-[18px]">
+                <span class="text-white">React</span>
+              </div>
+              <div class="w-full bg-white rounded-full h-3 flex items-center">
+                <div
+                  data-progress="1"
+                  class="bg-orange-500 h-3 rounded-full transition-all duration-3000 ease-out"
+                  style="width: 0%"
+                >
+                  <div class="ml-[-6px] transition-[margin-left] duration-3000 ease-out" data-gorgola>
+                    <div
+                      class="h-5 w-5 lg:h-8 lg:w-8 rounded-full bg-white border-4 border-orange-500 mt-[-4px] lg:mt-[-10px]"
+                    ></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -264,34 +326,43 @@
             convallis pretium. Turpis tempus pharetra
           </p>
         </div>
-        <div
-          class="w-[347] lg:max-w-[1087px] gap-3 h-[500px] lg:h-[344px] bg-white flex flex-row justify-center items-center rounded-[14px]"
-        >
-          <div class="w-[235px] h-[235px]">
+        <div class="grid grid-cols-1 lg:grid-cols-[235px,1fr] gap-6 p-8 bg-white rounded-[14px]">
+          <!-- 1. ფოტო: lg:row-span-2 აიძულებს კომპიუტერზე ორივე სართული დაიკავოს -->
+          <div class="flex justify-center lg:block lg:row-span-2">
+            <div class="w-[125px] h-[125px] lg:w-[235px] lg:h-[235px]">
+              <img
+                src="src/fotoebi/testimonials.png"
+                alt="testimonials"
+                class="w-full h-full rounded-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- 2. სახელი და პოზიცია -->
+          <div class="text-center lg:text-left">
+            <p class="text-2xl font-bold text-black">Name</p>
+            <p class="text-[19px] text-gray-600">Ceo</p>
+          </div>
+
+          <!-- 3. ტექსტი -->
+          <div class="text-center lg:text-left">
+            <p class="text-[#424242] text-[21px]">
+              Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan...
+            </p>
+          </div>
+        </div>
+        <!-- 
+        <div class="w-[] bg-white ">
+          <div class="w-[125px] h-[125px]">
             <img src="src/fotoebi/testimonials.png" alt="testimonials" class="w-full h-full" />
           </div>
-          <div class="max-w-[716px] flex flex-col-reverse lg:flex-col">
-            <div class="">
-              <span class="text-[32px] font-[700] tracking-[2%] text-[#FD6F00]">“</span>
-              <p class="text-[#424242] text-[21px] tracking-[2%]">
-                Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id
-                tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.
-              </p>
-              <span class="text-[32px] font-[700] tracking-[2%] text-[#FD6F00]">“</span>
-            </div>
-            <div>
-              <p class="text-2xl font-[500] tracking-[2%] text-[#000000]">Name</p>
-              <p class="text-[19px] tracking-[2%] text-[#000000]">Ceo</p>
-            </div>
+          <div class="text-black">
+            <p>mome</p>
+            <p>ceo</p>
           </div>
-        </div>
-        <div class="flex flex-row gap-[9px] mt-10 lg:mt-22">
-          <div class="w-[57px] h-4 bg-[#D9D9D9] rounded-xl"></div>
-          <div class="w-[57px] h-4 bg-[#D9D9D9] rounded-xl"></div>
-          <div class="w-[57px] h-4 bg-[#D9D9D9] rounded-xl"></div>
-          <div class="w-[57px] h-4 bg-[#D9D9D9] rounded-xl"></div>
-        </div>
+        </div> -->
       </section>
+
       <section id="contact" class="container mt-20 pb-21 lg:pb-11 lg:mt-[140px]">
         <div class="section-header">
           <h2 class="section-title">Contact Me</h2>
