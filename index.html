@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BABSKI</title>
 
     <link href="src/css/output.css" rel="stylesheet" />
     <script type="module" src="src/js/main.js" defer></script>
@@ -293,7 +293,7 @@
           class="flex flex-col lg:flex-row lg:justify-center gap-10 lg:gap-11 mt-12 lg:mt-[106px] mb-20 lg:mb-[139px]"
         >
           <div class="project" data-category="html/css">
-            <div class="w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
+            <div class="max-w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
               <a href="https://babski86.github.io/shualeduri/" target="_blank"
                 ><img src="src/fotoebi/project1.png" alt="project" class="h-full w-full rounded-2xl"
               /></a>
@@ -302,7 +302,7 @@
             <p class="text[24px] tracking-[3%] font-[700] mt-3 lg:mt-[10px]">გამოყენებულია მხოლოდ Html & css</p>
           </div>
           <div class="project" data-category="html/css/js">
-            <div class="w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
+            <div class="max-w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
               <a href="https://babski86.github.io/final1/" target="_blank"
                 ><img src="src/fotoebi/project2.png" alt="project" class="h-full w-full rounded-2xl"
               /></a>
@@ -311,7 +311,7 @@
             <p class="text[24px] tracking-[3%] font-[700] mt-3 lg:mt-[10px]">ამჯერად js დავამატე ჩემ ცოდნას</p>
           </div>
           <div class="project" data-category="react">
-            <div class="w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
+            <div class="max-w-[347px] lg:w-[445px] h-[360px] lg:h-[489px]">
               <a href="https://react.dev/" target="_blank">
                 <img src="src/fotoebi/project3.png" alt="project" class="h-full w-full rounded-2xl"
               /></a>
@@ -329,142 +329,139 @@
             convallis pretium. Turpis tempus pharetra
           </p>
         </div>
+        <div id="testimonials-container" class="mt-[30px]">
+          <div id="card-0" class="testimonial-card block">
+            <div
+              class="bg-white rounded-[14px] grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr] [grid-template-areas:'photo_name'_'text_text'] lg:[grid-template-areas:'photo_text'_'photo_name']"
+            >
+              <div
+                class="[grid-area:photo] w-[125px] lg:w-[235px] h-[125px] lg:h-[235px] mt-[22px] ml-[7px] lg:my-[55px] lg:ml-12 lg:mr-[11px]"
+              >
+                <img src="src/fotoebi/testimonials.png" class="w-full h-full rounded-full object-cover" />
+              </div>
 
-        <div
-          class="bg-white rounded-[14px] grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr] [grid-template-areas:'photo_name'_'text_text'] lg:[grid-template-areas:'photo_text'_'photo_name']"
-        >
-          <div
-            class="[grid-area:photo] w-[125px] lg:w-[235px] h-[125 px] lg:h-[235px] mt-[22px] ml-[7px] lg:my-[55px] lg:ml-12 lg:mr-[11px]"
-          >
-            <img src="src/fotoebi/testimonials.png" class="w-full h-full rounded-full object-cover" />
-          </div>
+              <div class="[grid-area:name] flex flex-col self-start justify-center ml-[21px] lg:ml-0">
+                <p class="text-2xl font-[500] text-black tracking-[2%] mb-[17px] lg:mb-0">lui</p>
+                <p class="text-[19px] text-[#000000] tracking-[2%]">Ceo</p>
+              </div>
 
-          <div class="[grid-area:name] flex flex-col self-start justify-center ml-[21px] lg:ml-0">
-            <p class="text-2xl font-[500] text-black tracking-[2%] mb-[17px] lg:mb-0">lui</p>
-            <p class="text-[19px] text-[#000000] tracking-[2%]">Ceo</p>
-          </div>
+              <div
+                class="[grid-area:text] relative flex items-end lg:ml-0 lg:mr-[77px] mx-[22px] lg:mb-4 mb-10 mt-[25px] lg:mt-0"
+              >
+                <p class="text-[#424242] text-[21px] leading-[1.6]">
+                  <span class="text-[#FD6F00] text-4xl font-bold align-top">“</span>
 
-          <div
-            class="[grid-area:text] relative flex items-end lg:ml-0 lg:mr-[77px] mx-[22px] lg:mb-4 mb-10 mt-[25px] lg:mt-0"
-          >
-            <p class="text-[#424242] text-[21px] leading-[1.6]">
-              <span class="text-[#FD6F00] text-4xl font-bold align-top">“</span>
+                  lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis
+                  id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo
+                  ultrices.
 
-              lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id
-              tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.
-
-              <span class="text-[#FD6F00] text-4xl font-bold align-bottom">”</span>
-            </p>
-          </div>
-        </div>
-        <div
-          class="bg-white rounded-[14px] grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr] [grid-template-areas:'photo_name'_'text_text'] lg:[grid-template-areas:'photo_text'_'photo_name']"
-        >
-          <div
-            class="[grid-area:photo] w-[125px] lg:w-[235px] h-[125 px] lg:h-[235px] mt-[22px] ml-[7px] lg:my-[55px] lg:ml-12 lg:mr-[11px]"
-          >
-            <img src="src/fotoebi/testimonials.png" class="w-full h-full rounded-full object-cover invert" />
-          </div>
-
-          <div class="[grid-area:name] flex flex-col self-start justify-center ml-[21px] lg:ml-0">
-            <p class="text-2xl font-[500] text-black tracking-[2%] mb-[17px] lg:mb-0">begi</p>
-            <p class="text-[19px] text-[#000000] tracking-[2%]">seo</p>
-          </div>
-
-          <div
-            class="[grid-area:text] relative flex items-end lg:ml-0 lg:mr-[77px] mx-[22px] lg:mb-4 mb-10 mt-[25px] lg:mt-0"
-          >
-            <p class="text-[#424242] text-[21px] leading-[1.6]">
-              <span class="text-[#FD6F00] text-4xl font-bold align-top">“</span>
-
-              lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id
-              tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.
-
-              <span class="text-[#FD6F00] text-4xl font-bold align-bottom">”</span>
-            </p>
-          </div>
-        </div>
-        <div
-          class="bg-white rounded-[14px] grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr] [grid-template-areas:'photo_name'_'text_text'] lg:[grid-template-areas:'photo_text'_'photo_name']"
-        >
-          <div
-            class="[grid-area:photo] w-[125px] lg:w-[235px] h-[125 px] lg:h-[235px] mt-[22px] ml-[7px] lg:my-[55px] lg:ml-12 lg:mr-[11px]"
-          >
-            <img src="src/fotoebi/testimonials.png" class="w-full h-full rounded-full object-cover grayscale" />
-          </div>
-
-          <div class="[grid-area:name] flex flex-col self-start justify-center ml-[21px] lg:ml-0">
-            <p class="text-2xl font-[500] text-black tracking-[2%] mb-[17px] lg:mb-0">aliosha</p>
-            <p class="text-[19px] text-[#000000] tracking-[2%]">proffessor</p>
-          </div>
-
-          <div
-            class="[grid-area:text] relative flex items-end lg:ml-0 lg:mr-[77px] mx-[22px] lg:mb-4 mb-10 mt-[25px] lg:mt-0"
-          >
-            <p class="text-[#424242] text-[21px] leading-[1.6]">
-              <span class="text-[#FD6F00] text-4xl font-bold align-top">“</span>
-
-              lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id
-              tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.
-
-              <span class="text-[#FD6F00] text-4xl font-bold align-bottom">”</span>
-            </p>
-          </div>
-        </div>
-        <div
-          class="bg-white rounded-[14px] grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr] [grid-template-areas:'photo_name'_'text_text'] lg:[grid-template-areas:'photo_text'_'photo_name']"
-        >
-          <div
-            class="[grid-area:photo] w-[125px] lg:w-[235px] h-[125 px] lg:h-[235px] mt-[22px] ml-[7px] lg:my-[55px] lg:ml-12 lg:mr-[11px]"
-          >
-            <img src="src/fotoebi/testimonials.png" class="w-full h-full rounded-full object-cover hue-rotate-180" />
-          </div>
-
-          <div class="[grid-area:name] flex flex-col self-start justify-center ml-[21px] lg:ml-0">
-            <p class="text-2xl font-[500] text-black tracking-[2%] mb-[17px] lg:mb-0">zaza</p>
-            <p class="text-[19px] text-[#000000] tracking-[2%]">xaker</p>
-          </div>
-
-          <div
-            class="[grid-area:text] relative flex items-end lg:ml-0 lg:mr-[77px] mx-[22px] lg:mb-4 mb-10 mt-[25px] lg:mt-0"
-          >
-            <p class="text-[#424242] text-[21px] leading-[1.6]">
-              <span class="text-[#FD6F00] text-4xl font-bold align-top">“</span>
-
-              lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id
-              tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.
-
-              <span class="text-[#FD6F00] text-4xl font-bold align-bottom">”</span>
-            </p>
-          </div>
-        </div>
-        <!-- <div class="grid grid-cols-1 lg:grid-cols-[235px,1fr] gap-6 p-8 bg-white rounded-[14px]">
-          <div class="flex justify-center lg:block lg:row-span-2">
-            <div class="w-[125px] h-[125px] lg:w-[235px] lg:h-[235px]">
-              <img
-                src="src/fotoebi/testimonials.png"
-                alt="testimonials"
-                class="w-full h-full rounded-full object-cover"
-              />
+                  <span class="text-[#FD6F00] text-4xl font-bold align-bottom">”</span>
+                </p>
+              </div>
             </div>
           </div>
+          <div id="card-1" class="testimonial-card hidden">
+            <div
+              class="bg-white rounded-[14px] grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr] [grid-template-areas:'photo_name'_'text_text'] lg:[grid-template-areas:'photo_text'_'photo_name']"
+            >
+              <div
+                class="[grid-area:photo] w-[125px] lg:w-[235px] h-[125px] lg:h-[235px] mt-[22px] ml-[7px] lg:my-[55px] lg:ml-12 lg:mr-[11px]"
+              >
+                <img src="src/fotoebi/testimonials.png" class="w-full h-full rounded-full object-cover invert" />
+              </div>
 
-          <div class="text-center lg:text-left">
-            <p class="text-2xl font-bold text-black">Name</p>
-            <p class="text-[19px] text-gray-600">Ceo</p>
-          </div>
+              <div class="[grid-area:name] flex flex-col self-start justify-center ml-[21px] lg:ml-0">
+                <p class="text-2xl font-[500] text-black tracking-[2%] mb-[17px] lg:mb-0">begi</p>
+                <p class="text-[19px] text-[#000000] tracking-[2%]">seo</p>
+              </div>
 
-          <div class="text-center lg:text-left">
-            <p class="text-[#424242] text-[21px]">
-              Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan...
-            </p>
+              <div
+                class="[grid-area:text] relative flex items-end lg:ml-0 lg:mr-[77px] mx-[22px] lg:mb-4 mb-10 mt-[25px] lg:mt-0"
+              >
+                <p class="text-[#424242] text-[21px] leading-[1.6]">
+                  <span class="text-[#FD6F00] text-4xl font-bold align-top">“</span>
+
+                  lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis
+                  id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo
+                  ultrices.
+
+                  <span class="text-[#FD6F00] text-4xl font-bold align-bottom">”</span>
+                </p>
+              </div>
+            </div>
           </div>
-        </div> -->
+          <div id="card-2" class="testimonial-card hidden">
+            <div
+              class="bg-white rounded-[14px] grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr] [grid-template-areas:'photo_name'_'text_text'] lg:[grid-template-areas:'photo_text'_'photo_name']"
+            >
+              <div
+                class="[grid-area:photo] w-[125px] lg:w-[235px] h-[125px] lg:h-[235px] mt-[22px] ml-[7px] lg:my-[55px] lg:ml-12 lg:mr-[11px]"
+              >
+                <img src="src/fotoebi/testimonials.png" class="w-full h-full rounded-full object-cover grayscale" />
+              </div>
+
+              <div class="[grid-area:name] flex flex-col self-start justify-center ml-[21px] lg:ml-0">
+                <p class="text-2xl font-[500] text-black tracking-[2%] mb-[17px] lg:mb-0">aliosha</p>
+                <p class="text-[19px] text-[#000000] tracking-[2%]">proffessor</p>
+              </div>
+
+              <div
+                class="[grid-area:text] relative flex items-end lg:ml-0 lg:mr-[77px] mx-[22px] lg:mb-4 mb-10 mt-[25px] lg:mt-0"
+              >
+                <p class="text-[#424242] text-[21px] leading-[1.6]">
+                  <span class="text-[#FD6F00] text-4xl font-bold align-top">“</span>
+
+                  lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis
+                  id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo
+                  ultrices.
+
+                  <span class="text-[#FD6F00] text-4xl font-bold align-bottom">”</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="card-3" class="testimonial-card hidden">
+            <div
+              class="bg-white rounded-[14px] grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr] [grid-template-areas:'photo_name'_'text_text'] lg:[grid-template-areas:'photo_text'_'photo_name']"
+            >
+              <div
+                class="[grid-area:photo] w-[125px] lg:w-[235px] h-[125px] lg:h-[235px] mt-[22px] ml-[7px] lg:my-[55px] lg:ml-12 lg:mr-[11px]"
+              >
+                <img
+                  src="src/fotoebi/testimonials.png"
+                  class="w-full h-full rounded-full object-cover hue-rotate-180"
+                />
+              </div>
+
+              <div class="[grid-area:name] flex flex-col self-start justify-center ml-[21px] lg:ml-0">
+                <p class="text-2xl font-[500] text-black tracking-[2%] mb-[17px] lg:mb-0">zaza</p>
+                <p class="text-[19px] text-[#000000] tracking-[2%]">xaker</p>
+              </div>
+
+              <div
+                class="[grid-area:text] relative flex items-end lg:ml-0 lg:mr-[77px] mx-[22px] lg:mb-4 mb-10 mt-[25px] lg:mt-0"
+              >
+                <p class="text-[#424242] text-[21px] leading-[1.6]">
+                  <span class="text-[#FD6F00] text-4xl font-bold align-top">“</span>
+
+                  lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis
+                  id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo
+                  ultrices.
+
+                  <span class="text-[#FD6F00] text-4xl font-bold align-bottom">”</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="flex gap-[10px] mt-[38px] lg:mt-[87px]">
-          <div class="w-[57px] h-4 bg-white rounded-2xl"></div>
-          <div class="w-[57px] h-4 bg-white rounded-2xl"></div>
-          <div class="w-[57px] h-4 bg-white rounded-2xl"></div>
-          <div class="w-[57px] h-4 bg-white rounded-2xl"></div>
+          <button id="btn-0" class="testimonial-btn active-btn w-[57px] h-4 rounded-2xl"></button>
+
+          <button id="btn-1" class="testimonial-btn w-[57px] h-4 bg-white rounded-2xl"></button>
+
+          <button id="btn-2" class="testimonial-btn w-[57px] h-4 bg-white rounded-2xl"></button>
+
+          <button id="btn-3" class="testimonial-btn w-[57px] h-4 bg-white rounded-2xl"></button>
         </div>
       </section>
       <section id="contact" class="container mt-20 pb-21 lg:pb-11 lg:mt-[140px]">

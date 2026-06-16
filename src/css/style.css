@@ -18,7 +18,7 @@ html {
   @apply border-y-2 border-solid border-amber-300 px-4 py-2;
 }
 .section-header {
-  @apply flex flex-col items-center justify-start text-center max-w-[347px] lg:max-w-[940px] lg:h-[214px] mx-auto;
+  @apply flex flex-col  lg:justify-start lg:text-center max-w-[347px] lg:max-w-[940px] lg:h-[214px] mx-auto;
 }
 .section-title {
   @apply text-4xl lg:text-[65px] tracking-[3%] font-[600];
@@ -31,6 +31,9 @@ html {
 }
 .border-for-menu {
   @apply flex border-y-[0.2px] border-white w-full py-2 pl-2;
+}
+.active-btn {
+  @apply bg-[#FD6F00];
 }
 
 .container {

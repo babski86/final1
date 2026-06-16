@@ -126,3 +126,29 @@ contactForm.addEventListener("submit", async (e) => {
     console.error("შეცდომა:", error);
   }
 });
+const testimonialCards = document.querySelectorAll(".testimonial-card");
+const testimonialButtons = document.querySelectorAll(".testimonial-btn");
+
+function showCard(index) {
+  testimonialCards.forEach((card) => {
+    card.classList.add("hidden");
+    card.classList.remove("block");
+  });
+
+  testimonialButtons.forEach((button) => {
+    button.classList.remove("active-btn");
+    button.classList.add("bg-white");
+  });
+
+  testimonialCards[index].classList.remove("hidden");
+  testimonialCards[index].classList.add("block");
+
+  testimonialButtons[index].classList.remove("bg-white");
+  testimonialButtons[index].classList.add("active-btn");
+}
+
+testimonialButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    showCard(index);
+  });
+});
