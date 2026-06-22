@@ -476,14 +476,15 @@
           <div
             class="flex flex-col gap-[28px] lg:flex-row mt-5 mb-[28px] lg:mb-[41px] w-full max-w-[347px] lg:max-w-[992px] lg:flex-1"
           >
-            <input type="text" name="name" placeholder="Your Name" class="form-input" />
-            <input type="email" name="email" placeholder="Your Email" class="form-input" />
+            <input type="text" name="name" placeholder="Your Name" class="form-input" required />
+            <input type="email" name="email" placeholder="Your Email" class="form-input" required />
             <input type="text" name="website" placeholder="Enter Your Website" class="form-input" />
           </div>
           <textarea
             name="message"
             class="w-full max-w-[347px] lg:max-w-[992px] h-[116px] text-[21px] bg-[#F8F8F8] rounded-[14px] p-5 text-black"
             placeholder="Enter Your Message"
+            required
           ></textarea>
           <button
             class="button-text-white max-w-[347px] rounded-[14px] w-full lg:w-[312px] h-[76px] mt-[37px] lg:mt-8 text-[24px] font-[600] tracking-[3%]"

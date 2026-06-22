@@ -85,7 +85,7 @@ buttons.forEach((e) => {
 
     const filter = e.getAttribute("data-filter");
 
-    // 3. შენი ფილტრაციის ლოგიკა
+   
     projects.forEach((project) => {
       const category = project.getAttribute("data-category");
       if (filter === "all" || category === filter || (filter === "html/css" && category === "html/css/js")) {
