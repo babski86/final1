@@ -85,7 +85,6 @@ buttons.forEach((e) => {
 
     const filter = e.getAttribute("data-filter");
 
-   
     projects.forEach((project) => {
       const category = project.getAttribute("data-category");
       if (filter === "all" || category === filter || (filter === "html/css" && category === "html/css/js")) {
@@ -151,4 +150,13 @@ testimonialButtons.forEach((button, index) => {
   button.addEventListener("click", () => {
     showCard(index);
   });
+});
+const inputText = document.querySelector("#text");
+
+inputText.addEventListener("input", () => {
+  if (input.value.length < 2) {
+    inputText.style.border = "4px solid red";
+  } else {
+    inputText.style.border = "4px solid green";
+  }
 });
